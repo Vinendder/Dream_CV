@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinendder Singh Bassi — Dream CV</title>
+  <meta name="description" content="The dream CV of Vinendder Singh Bassi, first-year Robotics and Automation student.">
+
+  <!-- Fonts: Pinyon Script = the swash capital, Playfair Display = the title serif, Poppins = body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Applies the saved theme before first paint so there is no light/dark flash -->
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+
+<!-- Theme toggle (stays on top of every page) -->
+<button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <circle class="theme-btn__core" cx="12" cy="12" r="4.2"/>
+    <g class="theme-btn__rays"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g>
+  </svg>
+</button>
+
+<!-- All pages are built by js/main.js from the info in js/data.js. Do not add content here. -->
+<main class="stage" id="stage"></main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
